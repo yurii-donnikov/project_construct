@@ -1,0 +1,110 @@
+.main_contact {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // border: 1px solid #000;
+    // background-color: #d5d5d5;
+
+
+    div {
+        display: block;
+
+        h2 {
+            position: relative;
+            @include styleH2;
+            text-align: center;
+            padding: 50px 0 10px 0;
+            @media (max-width: 414px) {
+                font-size: 18px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 2px;
+                width: 130px;
+                background-color: #00A4E5;
+                @media (max-width: 414px) {
+                bottom: 0px;
+            }
+            }
+        }
+
+        .main_contact_tell {
+            display: block;
+
+            li {
+                @include styleP;
+                margin: 10px;
+            }
+        }
+
+        #map {
+            display: block;
+            width: 100%;
+            height: 500px;
+            margin: auto;
+
+        }
+
+        // .contact_call {
+        //     display: block;
+        //     position: relative;
+        //     width: 100%;
+        //     height: 100%;
+        //     padding: 20px 0;
+
+        //     h2 {
+        //         @include styleH2;
+        //         text-align: center;
+        //         margin: 20px 0;
+        //         text-transform: uppercase;
+        //     }
+
+        //     fieldset {
+        //         display: flex;
+        //         flex-direction: row;
+        //         justify-content: space-around;
+        //         padding: 0 50px;
+
+        //         #main_contact_txt {
+        //             height: 40px;
+        //             width: 250px;
+        //             // border-right: 3px;
+        //             padding: 0 0 0 10px;
+        //             font-size: 18px;
+        //             font-family: 'Open Sans', sans-serif;
+        //             // border: none;
+        //         }
+
+        //         #main_contact_tell {
+        //             height: 40px;
+        //             width: 250px;
+        //             // border-right: 3px;
+        //             padding: 0 0 0 10px;
+        //             font-size: 18px;
+        //             font-family: 'Open Sans', sans-serif;
+        //         }
+
+        //         #main_contact_button {
+        //             @include styleButton;
+        //             height: 40px;
+        //             border: none;
+        //             border-radius: 0px;
+        //         }
+        //     }
+
+        //     #txtAfterInp {
+        //         @include styleP;
+        //         margin: 10px 0;
+        //         width: 100%;
+        //         text-align: center;
+
+        //     }
+        // }
+    }
+}

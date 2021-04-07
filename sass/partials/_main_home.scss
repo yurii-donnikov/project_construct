@@ -1,0 +1,203 @@
+.main_home {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 40px 0;
+
+    div {
+        display: block;
+        box-sizing: border-box;
+
+        h2 {
+            @include styleH2;
+            margin: 50px 0 40px 0;
+            text-align: center;
+            position: relative;
+
+            @media (max-width: 414px) {
+                font-size: 18px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 2px;
+                width: 130px;
+                background-color: #00A4E5;
+            }
+        }
+
+        .main_content1 {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+
+            @media (max-width: 666px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            div {
+                height: 100%;
+                width: 50%;
+
+                @media (max-width: 666px) {
+                    width: 100%;
+                    margin: 10px;
+                }
+
+                h3 {
+                    @include styleH2;
+                    font-size: 18px;
+                    width: 95%;
+
+                    @media (max-width: 414px) {
+                        font-size: 16px;
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    @include styleP;
+                    width: 95%;
+                    bottom: 0;
+                    margin: 20px 0 0 0;
+
+                    @media (max-width: 414px) {
+                        width: 100%;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .threeImg {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+
+                img {
+
+                    display: block;
+                    position: relative;
+                    width: 30%;
+                    height: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .main_content2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 40px 0;
+            box-sizing: border-box;
+
+            @media(max-width: 666px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h3 {
+                @include styleH2;
+                width: 35%;
+                position: relative;
+
+                @media(max-width: 666px) {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                @media (max-width: 414px) {
+                    font-size: 18px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    height: 2px;
+                    width: 150px;
+                    background-color: #00A4E5;
+
+                    @media(max-width: 666px) {
+                        display: none;
+                    }
+                }
+            }
+
+            p {
+                @include styleP;
+                width: 64%;
+
+                @media(max-width: 666px) {
+                    width: 100%;
+                    margin: 20px 0;
+                }
+
+                @media (max-width: 414px) {
+                    font-size: 15px;
+                }
+            }
+
+
+        }
+
+        a {
+            @include styleButton;
+        }
+    }
+
+    .main_content3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        @media (max-width: 666px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+
+        div {
+            width: 30%;
+            border: 1px solid #E6E6E6;
+            padding: 20px 10px;
+            margin: 10px 0;
+
+            @media (max-width: 666px) {
+                width: 45%;
+            }
+
+            @media (max-width: 414px) {
+                width: 90%;
+            }
+
+            img {
+                width: 65px;
+                height: 75px;
+            }
+
+            h3 {
+                @include styleH2;
+                font-size: 16px;
+                line-height: 20px;
+                margin: 10px 0;
+            }
+        }
+
+        p {
+            @include styleP;
+
+            
+        }
+    }
+}

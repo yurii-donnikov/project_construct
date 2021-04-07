@@ -1,0 +1,36 @@
+@mixin styleP {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1875px;
+    word-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    color: #000;
+}
+
+@mixin styleH2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.1875px;
+    word-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #000;
+}
+
+@mixin styleButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #00A4E5;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    &:hover{
+     background-color: #058abf;
+    }
+}
