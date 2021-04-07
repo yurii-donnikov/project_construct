@@ -41,33 +41,24 @@ main {
 
                 @media (max-width: 666px) {
                     display: none;
-
                 }
 
-
                 li {
-
                     @include styleP;
                     margin: 0 10px 0 10px;
                     font-weight: 600;
-                    // transition: all 1s ease 0s;
                     transition: color 0.3s ease 0s;
                     color: #000;
                     cursor: pointer;
 
-
-
                     &:hover {
                         color: #00A4E5;
                     }
-
-
                 }
 
                 #menu_home {
                     color: #00A4E5;
                 }
-
             }
 
             .buttonMenu {
@@ -111,7 +102,6 @@ main {
                 }
             }
         }
-
     }
 
     .main_mobile_menu {
@@ -121,11 +111,6 @@ main {
         display: block;
         border-bottom: 1px solid #000;
         display: none;
-
-        // @media (max-width: 666px) {
-        //     display: none;
-
-        // }
 
         .menu_mobile {
             display: flex;
@@ -137,33 +122,24 @@ main {
                 display: flex
             }
 
-
             li {
-
                 @include styleP;
                 margin: 10px 10px;
                 font-weight: 600;
-                // transition: all 1s ease 0s;
                 transition: color 0.3s ease 0s;
                 color: #000;
                 cursor: pointer;
 
-
-
                 &:hover {
                     color: #00A4E5;
                 }
-
-
             }
 
             #menu_home_mobile {
                 color: #00A4E5;
             }
-
         }
     }
-
 
     .main_top_services {
         display: block;
@@ -198,14 +174,11 @@ main {
                 flex-direction: row;
                 align-items: center;
 
-
                 li {
 
                     @include styleP;
                     margin: 0 10px 0 10px;
                     font-weight: 600;
-                    // transition: all 1s ease 0s;
-
 
                     a {
                         transition: color 0.3s ease 0s;
@@ -215,8 +188,6 @@ main {
                     :hover {
                         color: #00A4E5;
                     }
-
-
                 }
 
                 .menu_active {
@@ -225,7 +196,6 @@ main {
                     }
                 }
             }
-
         }
     }
 
@@ -242,6 +212,7 @@ main {
         @media (max-width: 666px) {
             min-height: 500px;
         }
+
         @media (max-width: 414px) {
             min-height: 300px;
         }
@@ -250,32 +221,23 @@ main {
             @include styleH2;
             margin: 50% 0 0 0;
             font-size: 35px;
-             @media (max-width: 666px) {
-            margin: 20% 0 0 0;
-            font-size: 30px;
-            width: 100%;
-    text-align: center;
-        }
-        @media (max-width: 414px) {
-            font-size: 20px;
-        }
+
+            @media (max-width: 666px) {
+                margin: 20% 0 0 0;
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+            }
+
+            @media (max-width: 414px) {
+                font-size: 20px;
+            }
         }
 
         #main_bottom_registr {
             @include styleButton;
             margin: 30px auto 0 auto;
         }
-
-        // .main_bottom_registration{
-        //  display: fixed;
-        //  position: absolute;
-        //  top: 0;
-        //  left: 0;
-        //  right: 0;
-        //  bottom: 0;
-        //  z-index: 2;
-        //  opacity: 0.5;
-        // } 
     }
 
     .active {

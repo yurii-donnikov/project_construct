@@ -12,8 +12,6 @@
 
         h2 {
             display: block;
-
-            // text-align: center;
             margin: 0px auto 0px auto;
             @include styleH2;
             position: relative;
@@ -26,29 +24,6 @@
                 font-size: 18px;
             }
 
-            // &::before {
-            //     position: absolute;
-            //     content: '';
-            //     height: 3px;
-            //     background-color: #00A4E5;
-            //     transform: rotate(60deg);
-            //     top: 60%;
-            //     left: -29px;
-            //     width: 10px;
-            //     border-radius: 1px;
-            // }
-
-            // &::after {
-            //     position: absolute;
-            //     content: '';
-            //     top: 50%;
-            //     left: -26px;
-            //     width: 20px;
-            //     height: 3px;
-            //     background-color: #00A4E5;
-            //     transform: rotate(-50deg);
-            //     border-radius: 1px;
-            // }
             &::after {
                 content: '';
                 position: absolute;
@@ -81,7 +56,6 @@
                     width: 7px;
                     height: 7px;
                     background-color: #00A4E5;
-
                     border-radius: 5px;
                 }
             }

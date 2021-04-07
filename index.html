@@ -169,15 +169,6 @@
                         </ul>
                         <div id="map">
                         </div>
-                        <!--                         <div class="contact_call">
-                            <h2>individual consultation</h2>
-                            <fieldset>
-                                <input id="main_contact_txt" type="text" name=" " placeholder="name">
-                                <input id="main_contact_tell" type="text" value="+2">
-                                <input id="main_contact_button" type="submit" value="send">
-                            </fieldset>
-                            <p id="txtAfterInp"></p>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -209,13 +200,6 @@
                             <li>+23 994 233 4022</li>
                             <li>info@konstruct.com</li>
                         </ul>
-                        <!-- <ul class="social">
-                            <li><a href="">
-                                    <img src="img/img_footer_social1.png" alt="">
-                                </a></li>
-                            <li><a href=""><img src="img/img_footer_social2.png" alt=""></a></li>
-                            <li><a href=""><img src="img/img_footer_social3.png" alt=""></a></li>
-                        </ul> -->
                     </div>
                 </div>
             </section>
@@ -238,18 +222,19 @@
     </div>
     <script src="./dist/main.js"></script>
     <script type="text/javascript">
+    // google map
     // Определяем переменную map
     var map;
 
     // Функция initMap которая отрисует карту на странице
     function initMap() {
 
-        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+
         map = new google.maps.Map(document.getElementById('map'), {
-            // При создании объекта карты необходимо указать его свойства
+
             // center - определяем точку на которой карта будет центрироваться
             center: { lat: 53.292921, lng: -0.250724 },
-            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+            // zoom - определяет масштаб
             zoom: 8
         });
 
@@ -258,17 +243,13 @@
             // Определяем позицию маркера
             position: { lat: 53.292921, lng: -0.250724 },
 
-            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
             map: map,
 
-            // Пишем название маркера - появится если навести на него курсор и немного подождать
+
             title: 'MY'
         });
     }
     </script>
-    <!-- 3. Подключаем библиотеку Google Maps Api, чтобы создать карту -->
-    <!-- Атрибуты async и defer - позволяют загружать этот скрипт асинхронно, вместе с загрузкой всей страницы  -->
-    <!-- В подключении библиотеки Google Maps Api в конце указан параметр callback, после  подключения и загрузки этого Api сработает функция initMap для отрисовки карты,  которую мы описали выше -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 

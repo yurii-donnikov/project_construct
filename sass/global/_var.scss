@@ -19,7 +19,7 @@
     color: #000;
 }
 
-@mixin styleButton{
+@mixin styleButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,8 @@
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
-    &:hover{
-     background-color: #058abf;
+
+    &:hover {
+        background-color: #058abf;
     }
 }

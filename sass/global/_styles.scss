@@ -1,7 +1,5 @@
 /* wrapper */
 .wrapper {
-    // display: flex;
-    // flex-direction: column;
     display: block;
     z-index: 1;
 
@@ -17,7 +15,6 @@
         overflow: auto;
         display: none;
         opacity: 0.5;
-        // opacity: 0.7;
         background-color: #999999;
 
 
@@ -58,7 +55,6 @@
             fieldset {
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-between;
                 align-items: center;
                 padding: 0 0px;
                 width: 100%;
@@ -94,11 +90,11 @@
 }
 
 .layout {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1040px;
-  padding: 0 20px 0 20px;
-  box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1040px;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
 }
 
 #content {

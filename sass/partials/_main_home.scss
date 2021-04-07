@@ -146,8 +146,6 @@
                     font-size: 15px;
                 }
             }
-
-
         }
 
         a {
@@ -164,8 +162,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-
-
 
         div {
             width: 30%;
@@ -196,8 +192,6 @@
 
         p {
             @include styleP;
-
-            
         }
     }
 }
